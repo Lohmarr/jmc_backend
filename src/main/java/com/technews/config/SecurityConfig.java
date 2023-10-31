@@ -47,7 +47,7 @@ public class SecurityConfig {
         private CorsConfigurationSource corsConfigurationSource() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:4200")); // Add the allowed origin
+        configuration.setAllowedOrigins(Arrays.asList("http://localhost:4200", "https://jmr-frontend-09ea084b198b.herokuapp.com")); // Add the allowed origins
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS")); // Add the allowed methods
         configuration.setAllowedHeaders(Arrays.asList("*")); // Add the allowed headers
         source.registerCorsConfiguration("/**", configuration);
